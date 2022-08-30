@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+
+  &__title {
+    font-size: $title-big;
+    font-weight: $bold;
+  }
+
+  &__text {
+    font-size: $title-sm;
+    font-weight: $bold;
+  }
+}
