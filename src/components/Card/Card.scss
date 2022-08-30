@@ -16,3 +16,12 @@
     opacity: .6;
   }
 }
+
+.card-skeleton {
+  &__wrapper {
+    display: flex;
+  }
+  &__title {
+    margin-top: 15px;
+  }
+}

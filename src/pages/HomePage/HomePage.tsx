@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { getRandomInteger } from '../../helpers/getRandomInteger';
 import { Card } from '../../components/Card/Card';
+import { CardSkeleton } from '../../components/Card/CardSkeleton';
 
+import 'react-loading-skeleton/dist/skeleton.css';
 import './HomePage.scss';
 
 export const HomePage = () => {
@@ -31,6 +33,9 @@ export const HomePage = () => {
 			</div>
 		</main>
 	) : (
-		<div style={{ textAlign: 'center', color: '#fff' }}>Loading...</div>
+		<main className='main-section'>
+			<div className='main-section__title'>JavaScript Frameworks</div>
+			<CardSkeleton cards={3} />
+		</main>
 	);
 };
